@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* ---------------------Header Css--------------- */
+
+#header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/img/bg\ 1\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.user-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.user-box img {
+    border-radius: 50%;
+    width: 350px;
+    border: 4px solid #6caed5;
+}
+
+.user-box h1 {
+    color: chartreuse;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.user-box p {
+    color: yellow;
+}
+
+.scroll-btn {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid rgb(0, 247, 173);
+    padding: 10px 10px 20px;
+    border-radius: 100px;
+}
+
+.scroll-btn span {
+    border: 3px solid #fff;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar {
+    animation: mover .5s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+/* ---------------------Header Css------ END--------- */
+
+
+/* -----------------User Info Section ------------------ */
+
+
+/* <!-- ----------ABOUT---------- --> */
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.profile-img {
+    height: 450px;
+}
+
+.nav-bar {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+
+/* .navbar {
+    background-color: green;
+} */
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.nav-bar .fa-bars {
+    font-size: 35px;
+    color: #fff;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.navbar-nav {
+    float: right;
+    text-align: right;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    border-radius: 16px;
+    background: green;
+}
+
+
+/* -----------------User Info Section ------------------ */
+
+
+/* --------------------resume----------------- */
+
+.resume {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #f9f9f9;
+}
+
+.resume h3 {
+    margin-bottom: 50px;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+
+.timeline li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: white;
+}
+
+.timeline:hover {
+    transition: .5s;
+    color: rgb(14, 173, 14);
+}
+
+.timeline li h4 {
+    background-color: green;
+    padding: 5px 0 5px 20px;
+    color: #ffff;
+    font-size: 19px;
+}
+
+.timeline li h4 span {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.timeline li:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border-radius: 3px solid #000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.timeline li:hover {
+    transition: 1s;
+    background: black;
+    color: #fff;
+    transform: 1s;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.bubu h2 {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* <!-- ------------------Services--------------------- --> */
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services h2 {
+    color: blue;
+    font-weight: bold;
+}
+
+.services-box {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.services-box .fa {
+    margin: 0 10px;
+    font-size: 20px;
+    color: rgb(250, 0, 0);
+}
+
+.services-box span {
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-box p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.services-box:hover {
+    background: black;
+    color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+}
+
+.services-box:hover p {
+    color: #fff;
+}
+
+
+/* <!-- --------------------------Contact------------------- --> */
+
+.contact {
+    padding-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/bg\ 1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.container h2 i {
+    color: red;
+}
+
+.contact .row {
+    padding: 30px 0;
+    font-size: 22px;
+}
+
+.contact .col-md-4 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.contact .col-md-4 .fa {
+    padding: 10px;
+    font-size: 40px;
+    color: red;
+}
+
+.contact .btn {
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    background: transparent;
+}
+
+.contact .btn:focus {
+    box-shadow: none !important;
+}
+
+.contact .btn:hover {
+    border: 2px solid black !important;
+    background: red !important;
+}
+
+.contact .btn .fa {
+    margin-right: 15px;
+}
+
+.footer {
+    right: 50px;
+    margin-top: 50px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    height: 100px;
+    text-align: center;
+}
+
+.fa-heart-o {
+    color: red;
+}
+
+
+/* .social-icons {
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 900px;
+}
+
+.social-icons ul {
+    padding: initial;
+}
+
+.social-icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #000;
+}
+
+.social-icons ul li:hover {
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+} */
+
+
+/* Name- Biswopaban Nayak
+Cont. 9861687572
+mail. biswopabannayak@gmail.com */
